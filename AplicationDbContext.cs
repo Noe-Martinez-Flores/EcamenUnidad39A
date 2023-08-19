@@ -15,20 +15,6 @@ namespace ExamenUnidad3
         }
 
         public DbSet<Citas>? Cita { get; set; }
-        // protected override void OnModelCreating (ModelBuilder modelBuilder){
-        //     modelBuilder.Entity<Citas>().HasData(
-        //         new Citas(){
-        //             Id = 1,
-        //             MotivoVisita = "Enfermo" ,
-        //             NombreVeterinario = "Milton",
-        //             FechaReservada = '',
-        //             FechaAtencion = '',
-        //             Observaciones="estar en ayunas"
-        //         }
-        //     );
-        // }
-
-            
     }
 }
 
