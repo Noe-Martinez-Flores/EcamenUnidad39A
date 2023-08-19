@@ -10,9 +10,10 @@ namespace ExamenUnidad3;
         {
             
         }
-        public DbSet<Servicios> Servicios { get; set; } 
+        public DbSet<Servicios> Servicios { get; set; }
         public DbSet<Medicamento> ? Medicamentos { get; set; }
-        public DbSet<Propietario> ? Propietarios { get; set; }   
+        public DbSet<Propietario> ? Propietarios { get; set; }
+        public DbSet<Citas>? Cita { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -50,6 +51,8 @@ namespace ExamenUnidad3;
                     Telefono = 77736050
                 }
             );
-        }  
-        
+        }
+
+
+
     }
