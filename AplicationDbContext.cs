@@ -12,19 +12,19 @@ namespace ExamenUnidad3
             
         }
 
-        public DbSet<Medicamento> ? Medicamentos { get; set; }
+        public DbSet<Paciente> ? Pacientes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Medicamento>().HasData(
-                new Medicamento()
+            modelBuilder.Entity<Paciente>().HasData(
+                new Paciente()
                 {
                     Id = 1,
-                     Descripcion = "HOLA",
-                     DosisRecomendada = 1,
-                      FormaAdministracion = "ORAL",
-                      Indicaciones = "NA",
-                      Nombre = "PARACETAMIOL"
+                     Nombre = "Perro Lobo Mexicano",
+                     Especie = "C. lupus",
+                      Raza = "Canina",
+                      Peso = 20,
+                      FechaNacimiento = new DateTime()
                 }
             );
         }
