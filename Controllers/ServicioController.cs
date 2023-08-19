@@ -30,6 +30,17 @@ public class ServicioController : ControllerBase
         return Ok(listServicios);
     }
 
+    [HttpGet("Show")]
+    public async Task<IActionResult> Show(int id)
+    {
+        var servicio = await _context.Servicios.FindAsync(id);
+        if (servicio == null) return NotFound();
+        return Ok(servicio);
+    }
+
+
+
+
     [HttpPost("Store")]
     public async Task<HttpStatusCode> Store([FromBody] Servicios servicios2)
     {
