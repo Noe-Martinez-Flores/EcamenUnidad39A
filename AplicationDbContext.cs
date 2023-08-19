@@ -2,13 +2,14 @@ using Microsoft.EntityFrameworkCore;
 using ExamenUnidad3.Models;
 namespace ExamenUnidad3
 {
-    class ApplicationDbContext : DbContext
+    
+   public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext( DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             
         }
-        public DbSet<Servicios> Servicios2 { get; set; } 
+        public DbSet<Servicios> Servicios { get; set; } 
            protected override void OnModelCreating (ModelBuilder modelBuilder){
             modelBuilder.Entity<Servicios>().HasData(
                 new Servicios(){
