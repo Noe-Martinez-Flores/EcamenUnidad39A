@@ -14,6 +14,7 @@ namespace ExamenUnidad3;
         public DbSet<Medicamento> ? Medicamentos { get; set; }
         public DbSet<Propietario> ? Propietarios { get; set; }
         public DbSet<Citas>? Cita { get; set; }
+        public DbSet<Paciente> ? Pacientes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
