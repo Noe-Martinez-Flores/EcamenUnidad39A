@@ -1,6 +1,7 @@
 using System;
-using ExamenUnidad3;
+
 using Microsoft.EntityFrameworkCore;
+using ExamenUnidad3;
 
 var builder = WebApplication.CreateBuilder(args);
 
